@@ -4,8 +4,7 @@
 This was a project of the PGVW lecture (procedual generation virtual worlds).
 The goal of this project was to create a tool for procedual generation virtual worlds
 in a limited time of 2 days. The focus of this project was to create a Parametric L-System for trees.
-Since the end of this project there was no changes. So was is my current goal to bring this project back to
-a state which can hold my current standards.
+Since the end of this project there was no changes.
 
 # L-Systems
 A l-system (Lindenmayer-System) allows creating realistic growing objects like plants.
@@ -22,7 +21,11 @@ As an example we have a Axiom "A", a Alphabet "(A,B,C)" and following rule-set:
 - A -> ABA
 - B -> CAC
 
-The first iteration would be "ABA" and the second would be "ABACACABA".
+The last thing a L-System needs is a iteration-count which means how often it iterate over the sequence.
+In this example it is two iterations.
+The first iteration would be "ABA" since the grammatic replaces "A" to "ABA".
+On the second iteration would the first and last letter replaced with "ABA" and the second letter with "CAC"
+which results in "ABACACABA".
 It is now possible to do this a unlimited amount of iterations which would result into a really long sequence.
 
 ## L-System-turtle
